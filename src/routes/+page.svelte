@@ -20,7 +20,7 @@
   </div>
 
   <button
-    class="py-1 px-5 border-l-2 border-gray-700 hover:underline"
+    class="py-1 px-5 border-l-2 border-gray-700 hover:underline w-28 text-right"
     on:click={() => text.update((n) => !n)}
     >{$text ? "Hide" : "Show"} Text</button
   >
@@ -33,11 +33,18 @@
 </main>
 
 <footer class="bg-black text-gray-400 text-sm py-1 text-center">
-  <span>© 2023 Copyright:</span>
+  <span>Created by </span>
   <a
     href="https://github.com/FeliNUx42"
     class="hover:underline"
     target="_blank"
-    rel="noreferrer">Félix Bommier</a
+    rel="noreferrer">FeliNUx42</a
+  >
+  <span>, Github Repo:</span>
+  <a
+    href="https://github.com/FeliNUx42/CatppuccinPreview/"
+    class="hover:underline"
+    target="_blank"
+    rel="noreferrer">CatppuccinPreview</a
   >
 </footer>
