@@ -7,10 +7,10 @@
 
 {#if $active == index}
   <div
-    class="p-16 pt-20 grid grid-cols-2 gap-10"
+    class="p-16 pt-20 grid grid-cols-1 gap-10 sm:grid-cols-2"
     style="background-color: {colors.Base.Hex};"
   >
-    {#each Object.entries(colors) as [name, { Hex, RGB, HSL }]}
+    {#each Object.entries(colors) as [name, { Hex }]}
       <div
         class="bg-red-500 rounded-lg py-10 px-12 flex justify-between"
         style="background-color: {Hex}; color: {$text ? 'black' : Hex}"
